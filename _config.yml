@@ -276,7 +276,27 @@ compress_html:
 
 
 # Defaults
+- scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
 defaults:
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
   # _posts
   - scope:
       path: ""
