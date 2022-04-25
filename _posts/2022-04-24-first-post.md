@@ -1,11 +1,11 @@
 ---
-title:  "메모리 확장을 위해 블로그"
+title:  "메모리 확장을 위한 블로그"
 excerpt: "github.io 블로그 시작하기"
 
 categories:
   - Blog
 tags:
-  - Blog
+  - Chat
 last_modified_at: 2022-04-24T01:07:00-10:00
 ---
 
