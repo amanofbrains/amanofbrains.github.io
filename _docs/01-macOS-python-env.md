@@ -7,7 +7,7 @@ macOS에도 익숙하지 않고, 가끔 마우스 휠도 헤갈리는 처지라 
 
 # 1. homebrew
 macOS의 패키지 관리자 homebrew를 설치하기
-Homebrew 홈 페이지 : https://brew.sh/index_ko
+[Homebrew 홈 페이지](https://brew.sh/index_ko)
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -38,12 +38,19 @@ pyenv versions
 
 zsh을 기본으로 사용하기 때문에 ~/.zshrc 파일에 아래 스크립트를 추가한다.
 if command -v pyenv 1>/dev/null 2>&1; then
+
   eval "$(pyenv init -)"
+  
 fi
+
 이후 zsh을 재실행하거나 source ~/.zshrc 명령으로 쉘 설정을 리로드 시킨다.
+
 which python
+
  => /User/user-name/.pyenv/shims/python
+ 
 python -V
+
  -> Python 3.9.12
 
 # 4. pip
