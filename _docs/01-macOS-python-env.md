@@ -30,9 +30,9 @@ pyenv install -l
 위 명령어로 pyenv로 설치 가능한 파이썬 버전 목록을 확인 할 수 있다.
 설치가 완료 되면 파이썬 디폴트 버전을 설치한 버전을 변경한다.
 
-pyenv versions
-pyenv global 3.9.12
-pyenv versions
+pyenv versions</b>
+pyenv global 3.9.12</b>
+pyenv versions</b>
 
 zsh을 기본으로 사용하기 때문에 ~/.zshrc 파일에 아래 스크립트를 추가한다.
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -48,24 +48,24 @@ python -V
 데이터 분석을 위해 파이썬 패키지 관리자인 pip으로 필요한 파이썬 패키지를 설치한다.
 데이터 분석을 위한 기본 패키지 : 다른 패키지와의 의존성으로 자동 설치도 됨.
 
-pip install pandas
-pip install beautifulsoup4
-pip install requests
-pip install numpy
-pip install scipy
+pip install pandas</b>
+pip install beautifulsoup4</b>
+pip install requests</b>
+pip install numpy</b>
+pip install scipy</b>
 
 바이넨스와 업비트 데이터를 가져오기 위한 패키지
-pip install python-binance
- => [python-binance](https://python-binance.readthedocs.io/en/latest/)
-pip install binance-connector
- => [binance-connector](https://github.com/binance/binance-connector-python)
-pip install pyupbit
+pip install python-binance</b>
+ => [python-binance](https://python-binance.readthedocs.io/en/latest/)v
+pip install binance-connector</b>
+ => [binance-connector](https://github.com/binance/binance-connector-python)</b>
+pip install pyupbit</b>
  => [pyupbit](https://github.com/sharebook-kr/pyupbit)
 
 # 5. 차트 지표 및 백테스팅을 위한 라이브러리
 ta-lib는 BSD 라이센스로 150개 이상의 차트 분석 지표(MACD, RSI, Stochastic, Bollinger Bands etc)를 계산해주는 api를 제공해 주고 있다. 이 파이썬 라이브러리는 추가로 Cython 기반의 [TA-LIB](https://ta-lib.org/)를 wrapping하고 있는 패키지로 먼저 brew를 이용하여 해당 패키지를 설치한다.
 
-brew install ta-lib
+brew install ta-lib</b>
 pip install ta-lib
 
 패키지를 모두 설치한 후 동작되는 것을 분명 확인했는데 x86_64 lib이 없다며 계속 오류가 발생되었다. 분명 arm64용 whl가 설치되었다고 로그를 확인했지만, file 명령어로 해당 라이브러리를 확인해보니 x86_64였고, 
@@ -77,7 +77,9 @@ pip install —no-cache-dir ta-lib
 추가로 여러 백테스트 툴 중 [시스템 트레이닝을 위한 데이터 사이언스](https://wikidocs.net/60659)에서 소개된 zipline을 설치해보자. zipline의 경우 ta-lib을 사용하기 때문에 앞 ta-lib만 문제 없이 설치될것 같았지만 hd5 라이브러리 오류가 발생되었다. 다음과 같이 설치해 보자
 
 brew install hdf5
+
 pip install h5py
+
 pip install zipline-reloaded
 
 일단 데이터 분석을 위한 필요한 기본 환경은 구축이된 듯하다. 차츰차츰 필요한 스터디를 해가면서 업데이트 해보려고 한다.
