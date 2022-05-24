@@ -89,3 +89,5 @@ pip install zipline-reloaded<br>
 
 일단 데이터 분석을 위한 필요한 기본 환경은 구축이된 듯하다. 차츰차츰 필요한 스터디를 해가면서 업데이트 해보려고 한다.<br>
 
+-> [zipline github](https://github.com/stefan-jansen/zipline-reloaded)
+
